@@ -1,18 +1,252 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Animated header banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6e6aff&height=200&section=header&text=My%20AI%20Chat%20App&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Современный%20AI-чат%20с%20авторизацией%20и%20историей&descSize=16&descAlignY=60&descColor=c4c4ff" width="100%"/>
 
-Currently, two official plugins are available:
+<!-- Badges -->
+<p>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"/></a>
+  <a href="https://vitejs.dev"><img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind-3.4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind"/></a>
+  <a href="https://redux-toolkit.js.org"><img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux"/></a>
+  <a href="https://vercel.com"><img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/></a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>
+  <img src="https://img.shields.io/github/stars/Fayozbek777/my-ai-chat-app?style=flat-square&color=6e6aff" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/Fayozbek777/my-ai-chat-app?style=flat-square&color=a78bfa" alt="Forks"/>
+  <img src="https://img.shields.io/github/license/Fayozbek777/my-ai-chat-app?style=flat-square&color=38bdf8" alt="License"/>
+  <img src="https://img.shields.io/badge/made%20in-Tashkent%20🇺🇿-success?style=flat-square" alt="Made in Tashkent"/>
+</p>
 
-## React Compiler
+<br/>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> **Чистый интерфейс · Тёмная тема · Плавные анимации · Работает без бэкенда**
 
-## Expanding the ESLint configuration
+<br/>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ai-chat-app
-# ai-chat-app
+<!-- Screenshot placeholder — замените на реальный скриншот -->
+<img src="https://via.placeholder.com/860x480/0e0e1a/6e6aff?text=📸+Screenshot+здесь" alt="App Screenshot" width="860" style="border-radius:12px"/>
+
+</div>
+
+<br/>
+
+---
+
+## ✦ Содержание
+
+- [О проекте](#-о-проекте)
+- [Возможности](#-возможности)
+- [Стек технологий](#️-стек-технологий)
+- [Быстрый старт](#-быстрый-старт)
+- [Структура проекта](#-структура-проекта)
+- [Переменные окружения](#-переменные-окружения)
+- [Деплой](#-деплой)
+- [Дорожная карта](#-дорожная-карта)
+- [Автор](#-автор)
+- [Лицензия](#-лицензия)
+
+---
+
+## 📌 О проекте
+
+**My AI Chat App** — это современное SPA-приложение для общения с искусственным интеллектом через OpenAI API. Полностью клиентское: не требует бэкенда, регистрация и чаты хранятся в браузере.
+
+Проект создан как pet-project для демонстрации работы с React-экосистемой, состоянием приложения через Redux и современными UX-паттернами.
+
+---
+
+## ✨ Возможности
+
+| Функция                 | Описание                                                |
+| ----------------------- | ------------------------------------------------------- |
+| 🔐 **Авторизация**      | Регистрация и вход без бэкенда — всё через localStorage |
+| 🤖 **AI-общение**       | OpenAI API + mock-режим для разработки без ключа        |
+| 💾 **Сохранение чатов** | Redux Persist автоматически сохраняет всю историю       |
+| 📋 **Боковая панель**   | Список чатов с превью последнего сообщения и датой      |
+| ⌨️ **Индикатор набора** | Анимация «печатает…» пока ИИ генерирует ответ           |
+| 🎞 **Анимации**         | Появление сообщений через Framer Motion                 |
+| 📜 **Scroll to bottom** | Автоматический скролл к последнему сообщению            |
+| 📱 **Адаптивность**     | Полностью отзывчивый дизайн на любых устройствах        |
+| 🚀 **Vercel-ready**     | Одна команда — и приложение в продакшне                 |
+
+---
+
+## 🛠️ Стек технологий
+
+<div align="center">
+
+| Категория     | Технология                    |
+| ------------- | ----------------------------- |
+| **UI**        | React 18, Tailwind CSS 3.4    |
+| **Сборка**    | Vite 5                        |
+| **Состояние** | Redux Toolkit + redux-persist |
+| **Анимации**  | Framer Motion, AOS            |
+| **Роутинг**   | React Router DOM v6           |
+| **Иконки**    | Lucide React                  |
+| **API**       | OpenAI API (+ mock-режим)     |
+| **Деплой**    | Vercel                        |
+
+</div>
+
+---
+
+## 🚀 Быстрый старт
+
+### Предварительные требования
+
+- Node.js `≥ 18`
+- npm `≥ 9`
+
+### Установка
+
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/Fayozbek777/my-ai-chat-app.git
+cd my-ai-chat-app
+
+# 2. Установить зависимости
+npm install
+
+# 3. Создать файл переменных окружения
+cp .env.example .env
+
+# 4. Запустить в режиме разработки
+npm run dev
+```
+
+Откройте браузер: **http://localhost:5173**
+
+---
+
+## 📁 Структура проекта
+
+```
+my-ai-chat-app/
+│
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── fonts/
+│
+├── src/
+│   ├── api/
+│   │   └── chatApi.js          # OpenAI API + mock-режим
+│   │
+│   ├── components/
+│   │   ├── ChatBox.jsx          # Область переписки
+│   │   ├── ChatSidebar.jsx      # Боковая панель с историей
+│   │   └── Message.jsx          # Отдельное сообщение
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx             # Главная страница чата
+│   │   ├── Login.jsx            # Страница входа
+│   │   └── Register.jsx         # Страница регистрации
+│   │
+│   ├── context/
+│   │   └── AuthContext.jsx      # Контекст авторизации
+│   │
+│   ├── hooks/
+│   │   └── useChat.js           # Хук логики чата
+│   │
+│   ├── store/
+│   │   ├── chatSlice.js         # Redux slice для чатов
+│   │   └── index.js             # Конфигурация стора
+│   │
+│   ├── utils/
+│   │   └── storage.js           # Утилиты localStorage
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+│
+├── .env                         # Переменные окружения
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 🔑 Переменные окружения
+
+Создайте файл `.env` в корне проекта:
+
+```env
+# OpenAI API ключ (необязательно — без него включается mock-режим)
+VITE_OPENAI_API_KEY=sk-...
+
+# Режим: "openai" или "mock"
+VITE_API_MODE=mock
+```
+
+> **⚠️ Никогда не коммитьте `.env` с реальным API-ключом в публичный репозиторий.**
+
+---
+
+## ☁️ Деплой
+
+### Vercel (рекомендуется)
+
+```bash
+# Установить Vercel CLI
+npm i -g vercel
+
+# Деплой
+vercel
+```
+
+Или просто нажмите:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Fayozbek777/my-ai-chat-app)
+
+---
+
+## 🗺 Дорожная карта
+
+- [x] Авторизация без бэкенда
+- [x] Интеграция OpenAI API
+- [x] Mock-режим
+- [x] Сохранение чатов (redux-persist)
+- [x] Анимации (Framer Motion)
+- [x] Адаптивный дизайн
+- [ ] Экспорт чата в PDF / Markdown
+- [ ] Поддержка нескольких моделей (GPT-4o, Claude)
+- [ ] Голосовой ввод
+- [ ] Светлая тема
+
+---
+
+## 👤 Автор
+
+<div align="center">
+
+<img src="https://avatars.githubusercontent.com/Fayozbek777" width="80" style="border-radius:50%"/>
+
+**Фаёзбек Бахрамов**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Fayozbek777-181717?style=flat-square&logo=github)](https://github.com/Fayozbek777)
+
+_Создано с ❤️ в Ташкенте · 2025–2026_
+
+</div>
+
+---
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией **MIT**.  
+Подробнее: [`LICENSE`](./LICENSE)
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6e6aff&height=100&section=footer" width="100%"/>
+
+<sub>Если проект оказался полезным — поставь ⭐ на GitHub, это очень мотивирует!</sub>
+
+</div>
